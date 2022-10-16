@@ -1,0 +1,16 @@
+{
+  "name": "Extra",
+  "dataType": "double",
+  "sourceColumn": "Extra",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

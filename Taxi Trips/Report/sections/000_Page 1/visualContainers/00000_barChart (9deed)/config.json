@@ -1,0 +1,102 @@
+{
+  "name": "9deedd4717597514b0ab",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 480,
+        "y": 16,
+        "z": 2000,
+        "width": 352,
+        "height": 240
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "barChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Table.Avg Amount per Trip"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Taxi Trips.Vendor ID",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "t",
+          "Entity": "Metrics",
+          "Type": 0
+        },
+        {
+          "Name": "t1",
+          "Entity": "Taxi Trips",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Avg Amount per Trip"
+          },
+          "Name": "Table.Avg Amount per Trip"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t1"
+              }
+            },
+            "Property": "Vendor ID"
+          },
+          "Name": "Taxi Trips.Vendor ID"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "t"
+                }
+              },
+              "Property": "Avg Amount per Trip"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

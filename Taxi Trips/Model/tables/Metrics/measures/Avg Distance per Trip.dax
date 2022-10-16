@@ -1,0 +1,1 @@
+AVERAGEX('Taxi Trips', 'Taxi Trips'[Trip Distance])

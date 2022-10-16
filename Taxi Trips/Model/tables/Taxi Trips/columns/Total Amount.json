@@ -1,0 +1,16 @@
+{
+  "name": "Total Amount",
+  "dataType": "double",
+  "sourceColumn": "Total Amount",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

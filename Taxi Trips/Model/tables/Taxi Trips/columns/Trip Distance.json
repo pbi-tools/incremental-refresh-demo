@@ -1,0 +1,16 @@
+{
+  "name": "Trip Distance",
+  "dataType": "double",
+  "sourceColumn": "Trip Distance",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

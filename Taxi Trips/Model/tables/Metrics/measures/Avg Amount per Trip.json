@@ -1,0 +1,10 @@
+{
+  "name": "Avg Amount per Trip",
+  "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-US\"}"
+    }
+  ]
+}

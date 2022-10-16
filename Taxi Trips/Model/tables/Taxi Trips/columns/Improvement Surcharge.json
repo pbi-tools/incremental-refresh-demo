@@ -1,0 +1,12 @@
+{
+  "name": "Improvement Surcharge",
+  "dataType": "string",
+  "sourceColumn": "Improvement Surcharge",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

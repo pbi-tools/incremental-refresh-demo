@@ -1,0 +1,99 @@
+{
+  "version": "0.12",
+  "deployments": {
+    "TaxiTrips": {
+      "mode": "Dataset",
+      "source": {
+        "type": "Folder",
+        "path": "./Taxi Trips"
+      },
+      "authentication": {
+        "type": "ServicePrincipal",
+        "tenantId": "pbitools.org",
+        "clientId": "708b6947-c640-4a74-9100-e4b3312b7182",
+        "clientSecret": "%PBI_CLIENT_SECRET%"
+      },
+      "credentials": [
+        {
+          "match": {
+            "datasourceType": "Sql",
+            "connectionDetails": {
+              "server": "pbitools-synapse-02-ondemand.sql.azuresynapse.net",
+              "database": "nyctaxitrips"
+            }
+          },
+          "updateMode": "NotSpecified",
+          "type": "Basic",
+          "username": "%SQL_USERNAME%",
+          "password": "%SQL_PASSWORD%"
+        }
+      ],
+      "options": {
+        "refresh": {
+          "enabled": true,
+          "skipNewDataset": false,
+          "type": "Automatic",
+          "objects": {
+            "Taxi Trips|2022Q309": "Automatic",
+            "Taxi Trips|2022Q4*": "Automatic"
+          },
+          "ignoreRefreshPolicy": false,
+          "skipRefreshPolicyPartitions": true,
+          "effectiveDate": null,
+          "tracing": {
+            "enabled": true,
+            "logEvents": {
+              "filter": [
+                "*|ReadData|*",
+                "*|Process|*",
+                "*|TabularRefresh|*"
+              ]
+            },
+            "summary": {
+              "events": [
+                "TabularRefresh",
+                "Process",
+                "ReadData",
+                "ExecuteSql"
+              ],
+              "objectTypes": [
+                "Partition"
+              ],
+              "outPath": "./.artifacts/refresh-summary.csv",
+              "console": true
+            }
+          }
+        },
+        "dataset": {
+          "replaceParameters": true,
+          "setCredentials": true,
+          "deployEmbeddedReport": true,
+          "applyRefreshPolicies": true,
+          "keepRefreshPolicyPartitions": true
+        }
+      },
+      "parameters": {
+        "[Version]": "1.0.0",
+        "[SQL Server]": "pbitools-synapse-02-ondemand.sql.azuresynapse.net",
+        "[SQL Database]": "NycTaxiTrips",
+        "[SQL View]": "YellowTaxiTrips",
+        "[Environment]": "{{ENVIRONMENT}}",
+        "[PBITOOLS_VERSION]": "{{PBITOOLS_VERSION}}",
+        "[GH-Branch]": "%GITHUB_REF_NAME%",
+        "[GH-RunId]": "%GITHUB_RUN_ID%",
+        "[GH-SHA]": "%GITHUB_SHA%"
+      },
+      "environments": {
+        "Development": {
+          "workspace": "Incremental Refresh",
+          "displayName": "Taxi Trips [{{ENVIRONMENT}}]",
+          "refresh": {
+            "objects": {}
+          },
+          "parameters": {},
+          "report": {}
+        }
+      }
+    }
+  }
+}

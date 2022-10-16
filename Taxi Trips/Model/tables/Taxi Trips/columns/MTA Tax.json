@@ -1,0 +1,16 @@
+{
+  "name": "MTA Tax",
+  "dataType": "double",
+  "sourceColumn": "MTA Tax",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Tip Amount",
+  "dataType": "double",
+  "sourceColumn": "Tip Amount",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Taxi Trips",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-GB",
+    "expressions": [
+      {
+        "name": "RangeStart",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "DateTime"
+          }
+        ]
+      },
+      {
+        "name": "RangeEnd",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "DateTime"
+          }
+        ]
+      },
+      {
+        "name": "[SQL Server]",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "[SQL Database]",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      },
+      {
+        "name": "[SQL View]",
+        "kind": "m"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.110.581.0 (22.10)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"RangeStart\",\"RangeEnd\",\"[SQL Server]\",\"[SQL Database]\",\"Taxi Trips\",\"[SQL View]\"]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Date",
+  "dataType": "dateTime",
+  "sourceColumn": "Date",
+  "formatString": "General Date",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

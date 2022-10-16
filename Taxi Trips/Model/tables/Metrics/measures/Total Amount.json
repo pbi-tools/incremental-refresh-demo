@@ -1,0 +1,10 @@
+{
+  "name": "Total Amount",
+  "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"currencyCulture\":\"en-US\"}"
+    }
+  ]
+}

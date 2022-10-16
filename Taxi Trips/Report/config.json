@@ -1,0 +1,36 @@
+{
+  "version": "5.37",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY22SU09",
+      "version": "5.39",
+      "type": 2
+    }
+  },
+  "activeSectionIndex": 0,
+  "defaultDrillFilterOtherVisuals": true,
+  "linguisticSchemaSyncVersion": 2,
+  "settings": {
+    "useNewFilterPaneExperience": true,
+    "allowChangeFilterTypes": true,
+    "useStylableVisualContainerHeader": true,
+    "useEnhancedTooltips": true,
+    "exportDataMode": 1,
+    "useDefaultAggregateDisplayName": true
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

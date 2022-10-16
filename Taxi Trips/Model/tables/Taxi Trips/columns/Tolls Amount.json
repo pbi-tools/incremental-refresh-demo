@@ -1,0 +1,16 @@
+{
+  "name": "Tolls Amount",
+  "dataType": "double",
+  "sourceColumn": "Tolls Amount",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "name": "c7140e60370e506a07a8",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 32,
+        "y": 16,
+        "z": 0,
+        "width": 384,
+        "height": 256
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Table.Number of Trips in Database"
+        },
+        {
+          "queryRef": "Table.Number of Trips"
+        },
+        {
+          "queryRef": "Table.Number of Dates"
+        },
+        {
+          "queryRef": "Table.Min Date"
+        },
+        {
+          "queryRef": "Table.Max Date"
+        },
+        {
+          "queryRef": "Table.Total Amount"
+        },
+        {
+          "queryRef": "Table.Avg Amount per Trip"
+        },
+        {
+          "queryRef": "Table.Avg Distance per Trip"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "t",
+          "Entity": "Metrics",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Number of Trips"
+          },
+          "Name": "Table.Number of Trips"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Number of Dates"
+          },
+          "Name": "Table.Number of Dates"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Min Date"
+          },
+          "Name": "Table.Min Date"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Max Date"
+          },
+          "Name": "Table.Max Date"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Total Amount"
+          },
+          "Name": "Table.Total Amount"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Avg Amount per Trip"
+          },
+          "Name": "Table.Avg Amount per Trip"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Avg Distance per Trip"
+          },
+          "Name": "Table.Avg Distance per Trip"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "Number of Trips in Database"
+          },
+          "Name": "Table.Number of Trips in Database"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "valuesOnRow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

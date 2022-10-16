@@ -1,0 +1,7 @@
+*.pbix
+*.pbit
+
+.artifacts/
+.scripts/
+query.json
+dataTransforms.json

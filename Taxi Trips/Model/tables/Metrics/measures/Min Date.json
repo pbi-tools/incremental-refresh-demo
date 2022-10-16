@@ -1,0 +1,10 @@
+{
+  "name": "Min Date",
+  "formatString": "dd mmm yyyy",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isCustom\":true}"
+    }
+  ]
+}
