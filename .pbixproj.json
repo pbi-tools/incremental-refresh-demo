@@ -32,10 +32,8 @@
         "refresh": {
           "enabled": true,
           "skipNewDataset": false,
-          "type": "Automatic",
+          "type": "Full",
           "objects": {
-            "Taxi Trips|2022Q309": "Automatic",
-            "Taxi Trips|2022Q4*": "Automatic"
           },
           "ignoreRefreshPolicy": false,
           "skipRefreshPolicyPartitions": true,
