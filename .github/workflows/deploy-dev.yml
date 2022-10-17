@@ -53,3 +53,9 @@ jobs:
           PBI_CLIENT_SECRET: ${{ secrets.PBI_CLIENT_SECRET }}
           SQL_USERNAME: ${{ secrets.SQL_USERNAME }}
           SQL_PASSWORD: ${{ secrets.SQL_PASSWORD }}
+
+      - name: 'Upload Artifacts'
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifacts
+          path: .artifacts/**/*.*
