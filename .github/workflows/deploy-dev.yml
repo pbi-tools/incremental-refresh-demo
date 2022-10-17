@@ -21,7 +21,7 @@ on:
 
 env:
   PROFILE: TaxiTrips
-  PBITOOLS_EffectiveDate: 2022-11-05
+  PBITOOLS_EffectiveDate: 2022-11-06
 
 jobs:
   Deployment:

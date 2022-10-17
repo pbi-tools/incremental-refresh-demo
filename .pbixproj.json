@@ -34,7 +34,6 @@
           "skipNewDataset": false,
           "type": "Full",
           "objects": {
-            "*|2022Q3*": "Automatic"
           },
           "ignoreRefreshPolicy": false,
           "skipRefreshPolicyPartitions": true,
