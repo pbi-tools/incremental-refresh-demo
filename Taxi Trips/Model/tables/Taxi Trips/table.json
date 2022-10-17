@@ -2,10 +2,10 @@
   "name": "Taxi Trips",
   "refreshPolicy": {
     "policyType": "basic",
-    "rollingWindowGranularity": "year",
+    "rollingWindowGranularity": "month",
     "rollingWindowPeriods": 1,
     "incrementalGranularity": "day",
-    "incrementalPeriods": 2,
+    "incrementalPeriods": 1,
     "incrementalPeriodsOffset": -1,
     "sourceExpression": [
       "let",

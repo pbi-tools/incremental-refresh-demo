@@ -66,7 +66,7 @@
           "replaceParameters": true,
           "setCredentials": true,
           "deployEmbeddedReport": true,
-          "applyRefreshPolicies": true,
+          "applyRefreshPolicies": false,
           "keepRefreshPolicyPartitions": true
         }
       },
@@ -90,6 +90,14 @@
           },
           "parameters": {},
           "report": {}
+        },
+        "Demo": {
+          "workspace": "Incremental Refresh",
+          "displayName": "Taxi Trips 4 [{{ENVIRONMENT}}]"
+        },
+        "Demo-2": {
+          "workspace": "Incremental Refresh",
+          "displayName": "Taxi Trips 4 [Restored]"
         }
       }
     }

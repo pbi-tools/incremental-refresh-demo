@@ -3,5 +3,6 @@
 
 .artifacts/
 .scripts/
+.resources/
 query.json
 dataTransforms.json
